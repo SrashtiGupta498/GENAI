@@ -14,65 +14,65 @@ python-from-scratch/
 │
 └── requirements.txt
 
-How yo upload this on git branch # 🐍 PYTHON FROM SCRATCH – BASIC TO ADVANCED (DETAILED GUIDE)
+How yo upload this on git branch   🐍 PYTHON FROM SCRATCH – BASIC TO ADVANCED (DETAILED GUIDE)
  
 1. WHAT IS PYTHON?
 
 Python is:
 
-* High-level
-* Interpreted
-* Dynamically typed
-* Object-Oriented
-* Beginner-friendly & powerful
+  High-level
+  Interpreted
+  Dynamically typed
+  Object-Oriented
+  Beginner-friendly & powerful
 
 Used in:
 Web Dev, Data Science, AI/ML, Automation, Backend, DevOps, Testing
 
----
+ 
 
-## 🔹 2. INSTALLATION & SETUP
+ 2. INSTALLATION & SETUP
 
-* Download from python.org
-* Check version:
+  Download from python.org
+  Check version:
 
-```bash
+ bash
 python --version
-```
+ 
 
-* Run python shell:
+  Run python shell:
 
-```bash
+ bash
 python
-```
+ 
 
----
+ 
 
-## 🔹 3. BASIC SYNTAX
+   🔹 3. BASIC SYNTAX
 
-```python
+ python
 print("Hello World")
-```
+ 
 
-✔ No semicolon
-✔ Indentation is mandatory
-✔ Easy readable syntax
+  No semicolon
+  Indentation is mandatory
+  Easy readable syntax
 
----
+ 
 
-## 🔹 4. VARIABLES & DATA TYPES
+   🔹 4. VARIABLES & DATA TYPES
 
-### Variables
+    Variables
 
-```python
+ python
 x = 10
 name = "Srishti"
-```
+ 
 
-### Data Types
+    Data Types
 
 | Type  | Example        |
-| ----- | -------------- |
+|  -- |     -- |
 | int   | `10`           |
 | float | `10.5`         |
 | str   | `"Hello"`      |
@@ -81,262 +81,262 @@ name = "Srishti"
 
 Check type:
 
-```python
+ python
 type(x)
-```
+ 
 
----
+ 
 
-## 🔹 5. INPUT & OUTPUT
+   🔹 5. INPUT & OUTPUT
 
-```python
+ python
 name = input("Enter name: ")
 print("Hello", name)
-```
+ 
 
-⚠ `input()` always returns **string**
+⚠ `input()` always returns   string  
 
----
+ 
 
-## 🔹 6. OPERATORS
+   🔹 6. OPERATORS
 
-### Arithmetic
+    Arithmetic
 
-`+  -  *  /  %  //  **`
+`+  -     /  %  //    `
 
-### Comparison
+    Comparison
 
 `==  !=  >  <  >=  <=`
 
-### Logical
+    Logical
 
 `and  or  not`
 
----
+ 
 
-## 🔹 7. CONTROL FLOW (IF-ELSE)
+   🔹 7. CONTROL FLOW (IF-ELSE)
 
-```python
+ python
 age = 20
 if age >= 18:
     print("Adult")
 else:
     print("Minor")
-```
+ 
 
-### elif
+    elif
 
-```python
+ python
 if marks > 90:
     print("A")
 elif marks > 70:
     print("B")
 else:
     print("C")
-```
+ 
 
----
+ 
 
-## 🔹 8. LOOPS
+   🔹 8. LOOPS
 
-### for loop
+    for loop
 
-```python
+ python
 for i in range(5):
     print(i)
-```
+ 
 
-### while loop
+    while loop
 
-```python
+ python
 i = 0
 while i < 5:
     print(i)
     i += 1
-```
+ 
 
-### break / continue
+    break / continue
 
-```python
+ python
 if i == 3:
     break
-```
+ 
 
----
+ 
 
-## 🔹 9. DATA STRUCTURES
+   🔹 9. DATA STRUCTURES
 
----
+ 
 
-### 🔸 LIST (Mutable)
+    🔸 LIST (Mutable)
 
-```python
+ python
 nums = [1,2,3]
 nums.append(4)
-```
+ 
 
 Common methods:
 
-* append()
-* pop()
-* remove()
-* sort()
-* reverse()
+  append()
+  pop()
+  remove()
+  sort()
+  reverse()
 
----
+ 
 
-### 🔸 TUPLE (Immutable)
+    🔸 TUPLE (Immutable)
 
-```python
+ python
 t = (1,2,3)
-```
+ 
 
-✔ Faster
-✔ Cannot modify
+  Faster
+  Cannot modify
 
----
+ 
 
-### 🔸 SET (Unique values)
+    🔸 SET (Unique values)
 
-```python
+ python
 s = {1,2,3,3}
-print(s)  # {1,2,3}
-```
+print(s)    {1,2,3}
+ 
 
----
+ 
 
-### 🔸 DICTIONARY (Key-Value)
+    🔸 DICTIONARY (Key-Value)
 
-```python
+ python
 user = {
     "name": "Srishti",
     "age": 24
 }
 print(user["name"])
-```
+ 
 
 Methods:
 
-* keys()
-* values()
-* items()
+  keys()
+  values()
+  items()
 
----
+ 
 
-## 🔹 10. FUNCTIONS
+   🔹 10. FUNCTIONS
 
-### Basic Function
+    Basic Function
 
-```python
+ python
 def greet(name):
     return "Hello " + name
-```
+ 
 
-### Default Parameters
+    Default Parameters
 
-```python
+ python
 def add(a, b=10):
     return a + b
-```
+ 
 
-### *args & **kwargs
+     args &   kwargs
 
-```python
-def test(*args):
+ python
+def test( args):
     print(args)
 
-def demo(**kwargs):
+def demo(  kwargs):
     print(kwargs)
-```
+ 
 
----
+ 
 
-## 🔹 11. LAMBDA FUNCTION
+   🔹 11. LAMBDA FUNCTION
 
-```python
-square = lambda x: x*x
-```
+ python
+square = lambda x: x x
+ 
 
 Used with:
 
-* map()
-* filter()
-* reduce()
+  map()
+  filter()
+  reduce()
 
----
+ 
 
-## 🔹 12. COMPREHENSIONS
+   🔹 12. COMPREHENSIONS
 
-### List Comprehension
+    List Comprehension
 
-```python
-squares = [x*x for x in range(5)]
-```
+ python
+squares = [x x for x in range(5)]
+ 
 
-### Dict Comprehension
+    Dict Comprehension
 
-```python
-d = {x: x*x for x in range(5)}
-```
+ python
+d = {x: x x for x in range(5)}
+ 
 
----
+ 
 
-## 🔹 13. STRING HANDLING
+   🔹 13. STRING HANDLING
 
-```python
+ python
 s = "python"
 s.upper()
 s.lower()
 s.replace("p","P")
-```
+ 
 
 Formatting:
 
-```python
+ python
 f"My name is {name}"
-```
+ 
 
----
+ 
 
-## 🔹 14. FILE HANDLING
+   🔹 14. FILE HANDLING
 
-```python
+ python
 file = open("data.txt", "r")
 print(file.read())
 file.close()
-```
+ 
 
 Best practice:
 
-```python
+ python
 with open("data.txt") as f:
     print(f.read())
-```
+ 
 
 Modes:
 
-* r, w, a, r+
+  r, w, a, r+
 
----
+ 
 
-## 🔹 15. EXCEPTION HANDLING
+   🔹 15. EXCEPTION HANDLING
 
-```python
+ python
 try:
     x = 10/0
 except ZeroDivisionError:
     print("Error")
 finally:
     print("Done")
-```
+ 
 
----
+ 
 
-## 🔹 16. OBJECT ORIENTED PROGRAMMING (OOP)
+   🔹 16. OBJECT ORIENTED PROGRAMMING (OOP)
 
-### Class & Object
+    Class & Object
 
-```python
+ python
 class Person:
     def __init__(self, name):
         self.name = name
@@ -346,108 +346,108 @@ class Person:
 
 p = Person("Srishti")
 p.greet()
-```
+ 
 
----
+ 
 
-### OOP Concepts
+    OOP Concepts
 
-✔ Encapsulation
-✔ Inheritance
-✔ Polymorphism
-✔ Abstraction
+  Encapsulation
+  Inheritance
+  Polymorphism
+  Abstraction
 
----
+ 
 
-### Inheritance
+    Inheritance
 
-```python
+ python
 class Child(Parent):
     pass
-```
+ 
 
----
+ 
 
-## 🔹 17. MODULES & PACKAGES
+   🔹 17. MODULES & PACKAGES
 
-```python
+ python
 import math
 math.sqrt(16)
-```
+ 
 
 Create module:
 
-```python
+ python
 import myfile
-```
+ 
 
----
+ 
 
-## 🔹 18. VIRTUAL ENVIRONMENT
+   🔹 18. VIRTUAL ENVIRONMENT
 
-```bash
+ bash
 python -m venv env
 env\Scripts\activate
-```
+ 
 
----
+ 
 
-## 🔹 19. ADVANCED PYTHON
+   🔹 19. ADVANCED PYTHON
 
----
+ 
 
-### 🔸 DECORATORS
+    🔸 DECORATORS
 
-```python
+ python
 def my_decorator(func):
     def wrapper():
         print("Before")
         func()
         print("After")
     return wrapper
-```
+ 
 
----
+ 
 
-### 🔸 GENERATORS
+    🔸 GENERATORS
 
-```python
+ python
 def gen():
     yield 1
     yield 2
-```
+ 
 
----
+ 
 
-### 🔸 ITERATORS
+    🔸 ITERATORS
 
-```python
+ python
 iter_obj = iter([1,2,3])
 next(iter_obj)
-```
+ 
 
----
+ 
 
-### 🔸 MULTITHREADING
+    🔸 MULTITHREADING
 
-```python
+ python
 from threading import Thread
-```
+ 
 
----
+ 
 
-### 🔸 MULTIPROCESSING
+    🔸 MULTIPROCESSING
 
-```python
+ python
 from multiprocessing import Process
-```
+ 
 
----
+ 
 
-## 🔹 20. POPULAR PYTHON LIBRARIES
+   🔹 20. POPULAR PYTHON LIBRARIES
 
 | Area       | Libraries           |
-| ---------- | ------------------- |
+|    - |       - |
 | Web        | Flask, Django       |
 | Data       | Pandas, NumPy       |
 | ML         | TensorFlow, PyTorch |
@@ -455,15 +455,15 @@ from multiprocessing import Process
 | API        | FastAPI             |
 | Testing    | PyTest              |
 
----
+ 
 
-## 🔹 21. PYTHON FOR BACKEND (Your MERN Background Advantage 🚀)
+   🔹 21. PYTHON FOR BACKEND (Your MERN Background Advantage 🚀)
 
 You’ll find Python similar to:
 
-* JS async → Python async/await
-* Express → FastAPI / Flask
-* MongoDB → PyMongo
-* REST APIs → FastAPI
+  JS async → Python async/await
+  Express → FastAPI / Flask
+  MongoDB → PyMongo
+  REST APIs → FastAPI
 
----
+ 
